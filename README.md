@@ -1,42 +1,34 @@
-Configurações básicas do projeto
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-* Para criação do projeto em nextjs com typescript do zero:
-npx create-nextapp nome_do_app -- typescript
+## Getting Started
 
-##Usando o template atual
+First, run the development server:
 
-1 instalar as dependencias:
-npm i
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-criar pasta src e colocar dentro dela a pasta "pages" e criar uma ui e colocar os styles
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-##configurações:
-ir em tsconfig:
-em compile options acrescentar
-"baseUrl": "src"  obs: faz da pasta src a raiz para busca de rotas
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-2. apos incrementals, acrescentar:
-"paths": {
-      "@partials/*": ["ui/partials/*"],
-      "@styles/*": ["ui/styles/*"]
-    }
-  },  obs: isso ajuda abreviando os caminhos passados pra achar os arquivos
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Learn More
 
-  ir em eslint.json e acrescentar:
-  "rules": {
-    "@next/next/no-img-element": "off"
-  },   obs: isso permite que o next aceite tags img normal do html.
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-  ######## instalação do mui/material ########
-  ir em mui.com e verificar tutoriais
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-  comando:  npm install @mui/material @emotion/react @emotion/styled
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-  ##### configrando o material/ui para não ter erros de hidratação do react #####
-  comandos:  
-
- #  excluir pasta api dentro de pages;
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
