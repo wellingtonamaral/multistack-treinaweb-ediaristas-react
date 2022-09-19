@@ -12,6 +12,11 @@ const theme = createTheme({
             main: '#02E7D9', 
             dark: '#1DD6CB'
         },
+        terceiro:{
+            light: '#ffffff',
+            main: '#f3f6f4', 
+            dark: '#000000'
+        },
         text:{
             primary: '#707070',
             secondary: '#9b9b9b'

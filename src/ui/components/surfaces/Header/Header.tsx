@@ -4,6 +4,7 @@ import { HeaderAppBar, HeaderLogo, ButtonContainer, HeaderDrawer } from "./Heade
 import RoundedButton from 'ui/components/inputs/RoundedButton/RoundedButton';
 import { useState } from "react";
 import useIsMobile from "data/services/hooks/useIsMobile";
+import DragHandleIcon from '@mui/icons-material/DragHandle';
 
 const Header: React.FC = () => {
   const isMobile =  useIsMobile();
@@ -49,8 +50,8 @@ const HeaderMobile: React.FC = () => {
     return (
         <HeaderAppBar>
             <Toolbar component={Container}>
-               <IconButton edge={"start"} color={"inherit"} onClick={()=>setDrawerOpen(true)}>
-                <i className="twf-bars" />
+               <IconButton edge={"start"}  onClick={()=>setDrawerOpen(true)}>
+                <DragHandleIcon/>
                </IconButton>
 
                 <Link href="/">

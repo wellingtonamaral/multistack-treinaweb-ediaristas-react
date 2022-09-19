@@ -50,6 +50,7 @@ export const HeaderDrawer = styled(Drawer)`
         ${({theme})=> theme.spacing()};
         background-color: ${({theme}) =>theme.palette.primary.main};
         color: ${({theme}) =>theme.palette.primary.contrastText};
+       
     }
     .MuiDivider-root{
         margin: ${({theme})=>theme.spacing(2)};
