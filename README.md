@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# E-diaristas | TreinaWeb Multi - Stack
 
-## Getting Started
+## 📚 Descrição ##
+Repositório que contém o projeto desenvolvido durante o Workshop Multi-stack organizado pela [**TreinaWeb**](https://www.treinaweb.com.br/). <br />
+O projeto trata-se de uma platafora para a contratação de diarista.
 
-First, run the development server:
+- [Backend](https://github.com/wellingtonamaral/multistack-treinaweb-ediaristas-react) <br />
 
-```bash
+
+**🔗 Tecnologias utilizadas:**
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+**📊 Dependências:**
+- [material-ui](https://material-ui.com/pt/)
+- [emotion](https://emotion.sh/docs/introduction)
+- [axios ](https://www.npmjs.com/package/axios)
+- [react-input-mask](https://www.npmjs.com/package/react-input-mask)
+
+------------
+
+## 🖥️ Como ver o projeto e modificá-lo ##
+
+1. Faça um Fork deste repositório (caso queira modificá-lo) ou somente clone este repositório;
+2. Instale o NodeJS e NPM clicando [neste link](https://nodejs.org/en/download/) (caso necessário);
+3. Após instalar o NodeJS e NPM, abra um terminal no diretório do projeto, e digite:
+```powershell
+npm install
+```
+4. Após as dependências do projeto estarem instaladas, digite:
+```powershell
+npm update
+```
+5. Para iniciar o projeto, ainda com o terminal aberto no diretório do projeto, digite:
+```powershell
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+------------
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## 📌 Autor ##
+- Wellington Amaral: [Github](https://github.com/wellingtonamaral) - [Linkedin](https://www.linkedin.com/in/wellamaral/) - [E-mail](https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=well.ribeiro@live.com)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+------------
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## ⚖️ Licença ##
+[MIT License](https://github.com/wellingtonamaral/multistack-treinaweb-ediaristas-react/blob/main/LICENSE)
