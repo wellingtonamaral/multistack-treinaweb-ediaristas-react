@@ -8,8 +8,7 @@ import {
             SectionPictureContainer, 
             SectionTitle } 
     from "./_presentation.styled";
-    import SearchIcon from '@mui/icons-material/Search';
-    import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+    
 
 
 const Presentation = () => {

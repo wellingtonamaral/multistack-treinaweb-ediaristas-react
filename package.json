@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006 -s ./public",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "plop": "plop"
   },
   "dependencies": {
     "@emotion/css": "^11.10.0",
@@ -17,9 +18,11 @@
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.5",
+    "@types/react-input-mask": "^3.0.2",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-input-mask": "^2.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
@@ -40,6 +43,7 @@
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "eslint-plugin-storybook": "^0.6.4",
+    "plop": "^3.1.1",
     "typescript": "4.8.2"
   }
 }

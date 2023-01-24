@@ -12,12 +12,7 @@ const theme = createTheme({
             main: '#02E7D9', 
             dark: '#1DD6CB'
         },
-        terceiro:{
-            light: '#ffffff',
-            main: '#f3f6f4', 
-            dark: '#000000'
-        },
-        text:{
+                text:{
             primary: '#707070',
             secondary: '#9b9b9b'
         },
@@ -55,6 +50,27 @@ const theme = createTheme({
     },
     shape:{
         borderRadius: '3px',
+    },
+    components:{
+        MuiButton:{
+            styleOverrides:{
+                root:{
+                    textTransform:'none',
+                    borderWidth: '2px',
+                    ':hover': {
+                        borderWidth: '2px',
+                    },
+                },
+            },
+            variants:[
+                {
+                    props:{variant: 'contained', color: 'secondary'},
+                    style:{
+                        color: 'white',
+                    },
+                },
+            ],
+        },
     },
 
 });
