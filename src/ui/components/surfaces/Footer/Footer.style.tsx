@@ -61,7 +61,7 @@ export const SocialButton = styled((props: LinkProps<typeof IconButton>) => (
         rel={"noopener noreferrer"}
         {...props} />
 ))`
-    background-color: ${({ theme }) => theme.palette.terceiro.light};
+    background-color: ${({ theme }) => theme.palette.secondary.light};
     
 `;
 

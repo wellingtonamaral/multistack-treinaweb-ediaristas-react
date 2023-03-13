@@ -3,7 +3,7 @@ import Link from "ui/components/navigation/Link/Link";
 import { HeaderAppBar, HeaderLogo, ButtonContainer, HeaderDrawer } from "./Header.style";
 import RoundedButton from 'ui/components/inputs/RoundedButton/RoundedButton';
 import { useState } from "react";
-import useIsMobile from "data/services/hooks/useIsMobile";
+import useIsMobile from "data/hooks/useIsMobile";
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 
 const Header: React.FC = () => {
