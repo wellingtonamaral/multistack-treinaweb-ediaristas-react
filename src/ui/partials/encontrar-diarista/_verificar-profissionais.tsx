@@ -45,39 +45,42 @@ const VerificarProfissionais: React.FC = () => {
                     variant={'contained'}  
                     color={'secondary'} 
                     sx={{width: '220px'}}
-                    disabled={!cepValido || carregando}
+                   
                     onClick={()=> buscarProfissionais(cep)}
                             > {carregando ? <CircularProgress size={20} />: 'Buscar'}
                 </Button>
             </FormElementsContainer>
-            <ProfissionaisPaper>
-            <ProfissionaisContainer>
-            <UserInformation
-                    name={'Flamengo'}
-                    picture={'https://upload.wikimedia.org/wikipedia/commons/2/2e/Flamengo_braz_logo.svg'}
-                    rating={5}
-                    description={'Rio de Janeiro'}
-                />
-                <UserInformation
-                    name={'Palmeiras'}
-                    picture={'https://upload.wikimedia.org/wikipedia/commons/1/10/Palmeiras_logo.svg'}
-                    rating={1}
-                    description={'São Paulo'}
-                />                
-                <UserInformation
-                    name={'Atletico Mineiro'}
-                    picture={'https://upload.wikimedia.org/wikipedia/commons/5/5f/Atletico_mineiro_galo.png'}
-                    rating={3}
-                    description={'Minas Gerais'}
-                />
+
+            {buscaFeita && 
+                (diaristas.length > 0 ? (
+                <ProfissionaisPaper>
+                    <ProfissionaisContainer>
+                    {diaristas.map((item, index) => (
+                            <UserInformation
+                                key={index}
+                                name={item.nome_completo}
+                                rating={item.reputacao || 0}
+                                picture={item.foto_usuario || ''}
+                                description={item.cidade}
+                                
+                    />
+                ))}
+                          
             </ProfissionaisContainer>
-                <Container sx={{textAlign: 'center'}}>
-                    <Typography 
-                    variant={'body2'} 
-                    color={'textSecondary'}
-                    sx={{mt: 5}}
-                    >...e mais 50 profissionais atendem ao seu endereço.
-                    </Typography>
+            <Container sx={{ textAlign: 'center' }}>
+                                {diaristasRestantes > 0 && (
+                                    <Typography
+                                        variant={'body2'}
+                                        color={'textSecondary'}
+                                        sx={{ mt: 5 }}
+                                    >
+                                        ...e mais {diaristasRestantes}{' '}
+                                        {diaristasRestantes > 1
+                                            ? 'profissionais atendem'
+                                            : 'profissional atende'}{' '}
+                                        ao seu endereço.
+                                    </Typography>
+                                )}
 
                     <Button 
                     variant={'contained'}
@@ -86,7 +89,12 @@ const VerificarProfissionais: React.FC = () => {
                     > Contratar um(a) profissional
                     </Button>
                 </Container>
-            </ProfissionaisPaper>
+            </ProfissionaisPaper>): (
+                <Typography align={'center'} color={'textPrimary'}>
+                Ainda não temos nenhum(a) diarista disponível em sua região    
+                </Typography>
+            )
+            )}
         </Container>
         </>
     );

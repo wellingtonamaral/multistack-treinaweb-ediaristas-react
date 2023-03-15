@@ -9,7 +9,8 @@
     "lint": "next lint",
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook",
-    "plop": "plop"
+    "plop": "plop",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@emotion/css": "^11.10.0",
@@ -41,6 +42,7 @@
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
     "babel-loader": "^8.2.5",
+    "cypress": "^12.7.0",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
     "eslint-plugin-storybook": "^0.6.4",
