@@ -1,6 +1,6 @@
 import PasswordStrength from "ui/components/feedback/PasswordStrength/PasswordStrength"
 import TextField from "../../TextField/TextField"
-import { NewContactData } from "../UseForm.style"
+import { NewContactData } from "../UserForm.style"
 import {useFormContext} from 'react-hook-form';
 
 export const NewContactForm = () =>{

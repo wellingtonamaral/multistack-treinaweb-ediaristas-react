@@ -1,5 +1,5 @@
 import { Controller, useFormContext } from "react-hook-form";
-import { UserData } from "../UseForm.style";
+import { UserData } from "../UserForm.style";
 import TextFieldMask from "../../TextFieldMask/TextFieldMask";
 import TextField from "../../TextField/TextField";
 import React from "react";

@@ -1,6 +1,6 @@
 import { useFormContext, Controller } from "react-hook-form"
 import FileField from "../../FileField/FileField"
-import { PictureSelection } from "../UseForm.style"
+import { PictureSelection } from "../UserForm.style"
 
 export const PictureForm = ()=>{
     const {control} = useFormContext();
